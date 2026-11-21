@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="AvtomaticElavatorSimulator/AvtomaticElavatorSimulator.csproj" />
+  <Project Path="Models/Models.csproj" />
+</Solution>
