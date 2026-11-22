@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="AvtomaticElavatorSimulator/AvtomaticElavatorSimulator.csproj" />
+  <Project Path="AvtomaticElevatorScada.Web/AvtomaticElevatorScada.Web.csproj" />
   <Project Path="Models/Models.csproj" />
 </Solution>

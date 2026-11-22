@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿namespace Models.Entities;
 
-namespace Models.Entities
+public class SensorView
 {
-    internal class SensorView
-    {
-    }
+    public string Name { get; set; } = "";
+    public string Topic { get; set; } = "";
+    public int X { get; set; }
+    public int Y { get; set; }
 }

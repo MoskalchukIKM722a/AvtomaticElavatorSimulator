@@ -11,7 +11,7 @@ namespace Models
 
         public override void ReadValue()
         {
-            Value = new Random().NextDouble() * 80;
+            Value = new Random().NextDouble() * 30;
             Console.WriteLine($" {Name} measured temperature : {Value}.");
         }
     }

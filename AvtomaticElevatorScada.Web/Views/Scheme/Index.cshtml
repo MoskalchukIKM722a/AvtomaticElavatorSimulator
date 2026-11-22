@@ -1,0 +1,27 @@
+﻿@using System.Globalization
+@using Models.Entities
+@{
+    ViewData["Title"] = "Мнемосхема";
+}
+<h2>Мнемосхема елеватора</h2>
+
+<div class="scheme">
+    @foreach (SensorView s in Model)
+    {
+        var x = (s.X / 1600.0 * 100).ToString(
+            System.Globalization.CultureInfo.InvariantCulture);
+
+        var y = (s.Y / 900.0 * 100).ToString(
+            System.Globalization.CultureInfo.InvariantCulture);
+
+        <div class="sensor"
+             data-topic="@s.Topic"
+             style="left: calc(@(x)%); top: calc(@(y)%);">
+            <div class="name">@s.Name</div>
+            <div class="value">—</div>
+        </div>
+    }
+</div>
+@section Scripts {
+    <script src="~/js/scheme.js"></script>
+}
